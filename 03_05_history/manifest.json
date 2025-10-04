@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "history-extension",
+  "version": "0.1",
+
+  "description": "これは履歴を検証するブラウザ拡張機能です。",
+
+  "icons": {
+    "32": "icons/check_box_32dp.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "history"
+  ]
+}

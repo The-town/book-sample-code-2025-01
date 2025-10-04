@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "init-extension",
+    "version": "0.1",
+  
+    "description": "これは初めてのブラウザ拡張機能です。",
+  
+    "icons": {
+      "32": "icons/check_box_32dp.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://developer.mozilla.org/*"],
+        "js": ["main.js"]
+      }
+    ],
+
+    "background": {
+      "scripts": ["background.js"]
+    }
+}

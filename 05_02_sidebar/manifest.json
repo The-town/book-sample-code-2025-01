@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "sidebar-extention",
+  "version": "0.1",
+
+  "description": "これはサイドバーを検証するブラウザ拡張機能です。",
+
+  "icons": {
+    "32": "icons/check_box_32dp.png"
+  },
+  
+  "sidebar_action": {
+    "default_title": "Sample Sidebar",
+    "default_panel": "sidebar/sidebar.html"
+  }
+}

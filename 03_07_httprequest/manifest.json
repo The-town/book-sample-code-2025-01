@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "http-extention",
+  "version": "0.1",
+
+  "description": "これはHTTPリクエストを検証するブラウザ拡張機能です。",
+
+  "icons": {
+    "32": "icons/check_box_32dp.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+      "webRequest",
+      "webRequestBlocking"
+  ],
+
+  "host_permissions": [
+    "https://www.example.com/*"
+  ]
+}

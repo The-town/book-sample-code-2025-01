@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "menus-extension",
+  "version": "0.1",
+
+  "description": "これはコンテキストメニューを検証するブラウザ拡張機能です。",
+
+  "icons": {
+    "32": "icons/check_box_32dp.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "contextMenus",
+    "menus"
+  ]
+}

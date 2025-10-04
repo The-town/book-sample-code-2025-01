@@ -1,0 +1,24 @@
+{
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "sample-optionpage@example.com"
+      }
+    },
+    "manifest_version": 3,
+    "name": "storage-extention",
+    "version": "0.1",
+  
+    "description": "これはストレージを検証するブラウザ拡張機能です。",
+  
+    "icons": {
+      "32": "icons/check_box_32dp.png"
+    },
+
+    "background": {
+      "scripts": ["background.js"]
+    },
+  
+    "permissions": [
+        "storage"
+    ]
+}

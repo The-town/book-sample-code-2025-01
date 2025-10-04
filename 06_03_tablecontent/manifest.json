@@ -1,0 +1,26 @@
+{
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "table-contents-extention@example.com"
+      }
+    },
+    "manifest_version": 3,
+    "name": "table-contents-extention",
+    "version": "0.1",
+  
+    "description": "これは目次を表示するブラウザ拡張機能です。",
+  
+    "icons": {
+      "32": "icons/icon-32.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "optional_permissions": [
+      "activeTab"
+    ]
+}

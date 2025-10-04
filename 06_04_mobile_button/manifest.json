@@ -1,0 +1,25 @@
+{
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "the-town-sample-button@example.com"
+        }
+    },
+    "manifest_version": 3,
+    "name": "sample-button-extention",
+    "version": "0.1",
+  
+    "description": "ボタンサンプル",
+  
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["main.js"],
+        "css": ["main.css"],
+        "run_at": "document_end"
+      }
+    ]
+}

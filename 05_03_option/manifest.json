@@ -1,0 +1,22 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "sample-optionpage@example.com"
+    }
+  },
+  "manifest_version": 3,
+  "name": "option-extention",
+  "version": "0.1",
+
+  "description": "これは設定ページを検証するブラウザ拡張機能です。",
+
+  "icons": {
+    "32": "icons/check_box_32dp.png"
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

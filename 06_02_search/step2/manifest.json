@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "search-extention",
+  "version": "0.1",
+
+  "description": "これは検索機能を検証するブラウザ拡張機能です。",
+
+  "icons": {
+    "64": "icons/search_64dp.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "find",
+    "activeTab"
+  ],
+  "action": {
+    "default_icon": {
+        "64": "icons/search_64dp.png"
+    },
+    "default_title": "search-extention"
+  },
+  "sidebar_action": {
+    "default_title": "Sample Sidebar",
+    "default_panel": "sidebar/sidebar.html",
+    "default_icon": {
+        "64": "icons/search_64dp.png"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/* Firefox拡張機能 - モバイル版サンプル */
+/* 右下に表示される追加ボタンのスタイル */
+
+.firefox-floating-button {
+    /* 固定位置で右下に配置 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    
+    /* ボタンのサイズとスタイル */
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    
+    /* 背景とテキスト */
+    background-color: #ff6b35;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+    
+    /* テキストの中央揃え */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* タッチデバイス対応 */
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
